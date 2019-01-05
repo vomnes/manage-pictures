@@ -15,5 +15,5 @@ go build rename-pictures.go
 ```
 
 ## Output
-`yyyy_mm_yy_hhmmName-City-CountryCode&<lat>&<long>.jpg`
+`yyyy_mm_yy_hhmmName-City-CountryCode&<lat>&<long>.jpg`   
 `2016_06_03_1543ObservatoryHouse-CityofEdinburgh-gb&55.954697&-3.184333.jpg`
