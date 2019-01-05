@@ -22,8 +22,8 @@ go build rename-pictures.go
 
 - RenamePictures on MacOS &rarr; [Download](https://vomnes.github.io/download/rename-pictures-macos.zip)
 
-<img alt="GUI 1" src="./screenshots/gui-1.png" width="100%" title="gui 1">
+<img alt="GUI 1" src="./screenshots/gui-1.png" width="50%" title="gui 1">
 
-<img alt="GUI 2" src="./screenshots/gui-2.png" width="100%" title="gui 2">
+<img alt="GUI 2" src="./screenshots/gui-2.png" width="50%" title="gui 2">
 
-<img alt="GUI 3" src="./screenshots/gui-3.png" width="100%" title="gui 3">
+<img alt="GUI 3" src="./screenshots/gui-3.png" width="50%" title="gui 3">
