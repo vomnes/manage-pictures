@@ -146,7 +146,7 @@ func main() {
 	centralWidget.SetLayout(layout)
 	window.SetCentralWidget(centralWidget)
 
-	window.Show()
+	window.ActivateWindow()
 
 	widgets.QApplication_Exec()
 }
