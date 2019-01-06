@@ -5,7 +5,6 @@ import (
 	"os"
 
 	"./rename"
-	"github.com/kr/pretty"
 )
 
 func main() {
@@ -16,11 +15,9 @@ func main() {
 	}
 	directoryName := progArgs[1]
 	loading := rename.StatFolders(directoryName)
-	pretty.Print(loading)
-	go rename.Run(directoryName, &loading)
-	for loading.Done != loading.Total {
-		pretty.Println(loading)
-	}
+	fmt.Println("Total pictures:", loading.Total)
+	rename.Run(directoryName, &loading)
+	fmt.Println("Done")
 }
 
 // yyyy-mm-dd-hhmm-lat-xxxx-long-xxxx-position-name-xxxx-model-OneplusA5010-iso-125-speed-1/243-f/1.7-white-balance-auto

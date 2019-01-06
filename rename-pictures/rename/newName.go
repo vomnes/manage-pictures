@@ -12,7 +12,7 @@ import (
 func GetNewName(fileName, path string) string {
 	f, err := os.Open(path + fileName)
 	if err != nil {
-		fmt.Println("1", err)
+		fmt.Println("Error - open file:", err)
 		return ""
 	}
 
@@ -20,7 +20,7 @@ func GetNewName(fileName, path string) string {
 
 	x, err := exif.Decode(f)
 	if err != nil {
-		fmt.Println("2", err)
+		fmt.Println("Error - decode exif file:", err)
 		return ""
 	}
 
@@ -28,12 +28,12 @@ func GetNewName(fileName, path string) string {
 	// FORMAT DATE TIME
 	time, error := x.DateTime()
 	if error != nil {
-		fmt.Println("3", err)
+		fmt.Println("Error - DateTime:", err)
 		return ""
 	}
 	formatTime := fmt.Sprintf(
-		"%4d_%02d_%02d_%02d%02d",
-		time.Year(), time.Month(), time.Day(), time.Hour(), time.Minute(),
+		"%4d_%02d_%02d_%02d%02d%02d",
+		time.Year(), time.Month(), time.Day(), time.Hour(), time.Minute(), time.Second(),
 	)
 	newName += formatTime
 
