@@ -8,6 +8,7 @@ go get -u github.com/xor-gate/goexif2/exif
 go get -u github.com/xor-gate/goexif2/tiff
 
 # Build program
+cd rename-pictures
 go build rename-pictures.go
 
 # Run program
